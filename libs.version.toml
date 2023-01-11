@@ -1,0 +1,27 @@
+[versions]
+androidxCompose = "1.3.1"
+androidxComposeCompiler = "1.1.1"
+androidxActivityCompose = "1.6.1"
+androidxComposeLifecycle = "2.6.0-alpha03"
+
+androidxCoreKtx = "1.9.0"
+androidxLifeCycle = "2.5.1"
+
+retrofit = "2.9.0"
+
+[libraries]
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "androidxCompose" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "androidxCompose" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "androidxCompose" }
+compose-ui-test-junit = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "androidxCompose" }
+compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version.ref = "androidxCompose" }
+compose-material = { group = "androidx.compose.material", name = "material", version.ref = "androidxCompose" }
+
+
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivityCompose" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCoreKtx" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifeCycle" }
+lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxComposeLifecycle" }

@@ -1,3 +1,13 @@
+enableFeaturePreview("VERSION_CATALOGS")
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("libs") {
+            from(files("libs.version.toml"))
+        }
+    }
+}
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -13,4 +23,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ComposeCatalog"
-include ':app'
+include(":app")
