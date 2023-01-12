@@ -46,6 +46,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":feature"))
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
@@ -57,12 +58,7 @@ dependencies {
     debugImplementation(libs.compose.ui.test.manifest)
     implementation(libs.compose.material)
 
-    //retrofit2
-    implementation(libs.retrofit)
-    implementation(libs.retrofit.gson.converter)
-
     //change
-
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -72,22 +68,15 @@ dependencies {
     implementation("androidx.tracing:tracing-perfetto:1.0.0-alpha08")
     implementation("androidx.tracing:tracing-perfetto-binary:1.0.0-alpha08")
 
-    //paging
-    implementation("androidx.paging:paging-runtime:3.1.1")
-    implementation("androidx.paging:paging-compose:1.0.0-alpha17")
 
     //hilt
     implementation("com.google.dagger:hilt-android:2.42")
     kapt("com.google.dagger:hilt-compiler:2.42")
-    implementation("androidx.fragment:fragment-ktx:1.5.5")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation("androidx.fragment:fragment-ktx:1.5.5")
 
     //coroutine
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
-
-    //coil
-    implementation("io.coil-kt:coil:2.2.2")
-    implementation("io.coil-kt:coil-compose:2.2.2")
 
     //timber
     implementation("com.jakewharton.timber:timber:5.0.1")

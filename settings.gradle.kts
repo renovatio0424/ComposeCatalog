@@ -24,3 +24,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ComposeCatalog"
 include(":app")
+include(":design_system")
+include(":feature")
+include(":data")
+include(":common")
